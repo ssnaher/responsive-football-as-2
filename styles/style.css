@@ -5,6 +5,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+main{
+    width: 1050px;
+    margin: 0 auto;
+}
+
 
 /* banner section */
 header{
@@ -14,8 +19,10 @@ header{
 .banner{
     display: flex;
     justify-content: space-evenly;
-   
+    width: 1050px;
+    margin: 0 auto;
 }
+
 .left-banner{
     color: #FFFFFF;
     width: 485px;
@@ -23,7 +30,7 @@ header{
     padding-top: 153px;
     padding-bottom: 86px;
 }
-.left-banner a{
+.btn{
     text-decoration: none;
     padding: 10px 24px;
     background-color: #DD136C;
@@ -32,11 +39,27 @@ header{
     color: #FFFFFF;
     text-transform: capitalize;
 }
+.btn:hover i {
+    transform: scaleX(1.5);
+}
+
+.left-banner a i {
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+}
+
+.right-banner:hover img {
+    transform: translate(10px, 10px);
+}
 .right-banner img{
     width: 556px;
     height: 438px;
+    transition: transform .4s ease-in-out;
 }
-
+.left-banner img:hover{
+    transform: scale(1.5);
+    
+}
 
 
 /* Players info section */
@@ -64,8 +87,9 @@ header{
     color: #18191F;
 }
 .player img{
-    width: 300px;
+    width: 100%;
     height: 256px;
+    object-fit: cover;
 }
 .player p{
     width: 300px;
@@ -111,19 +135,24 @@ header{
     text-transform: capitalize;
 }
 /* official section design */
-
+.container{
+    color: #1C3D9B;
+    background-color: #1C3D9B;
+}
 .official{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 165px;
-    background-color: #1C3D9B;
-    padding: 50px 0;
+    padding: 50px 30px;
+    width: 1050px;
+    margin: 0 auto;
+
 }
 .official div{
     width: 400px;
 }
 .official-header{
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 60px;
     color: #ffffff;
@@ -153,9 +182,12 @@ header{
 /* video section design */
 .video{
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 165px;
+    justify-content: space-evenly;
+}
+.video-left{
+    margin-right: 40px;
 }
 .video h2{
     font-size: 32px;
@@ -169,7 +201,7 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-i{
+.icons i{
     width: 32px;
     height: 32px;
     background-color: #E7E7E8;
