@@ -12,8 +12,8 @@
 
 <body>
     <!-- Header section start -->
-    <header class="container">
-        <div class="banner">
+    <header>
+        <div class="banner container">
             <div class="left-banner">
                 <h1>Conmebol <br> Copa America <br> 2021</h1>
                 <a class="btn" target="_blank" href="https://www.youtube.com/results?search_query=football">watch live
@@ -25,7 +25,7 @@
         </div>
     </header>
     <!-- Header section end -->
-    <main>
+    <main class="container">
         <section>
             <div class="players">
                 <div class="player">
@@ -139,7 +139,7 @@
         <!-- video section -->
         <section class="video">
             <div class="video-left">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XkqUwhlRwJI"
+                <iframe max-width="100%" height="315" src="https://www.youtube.com/embed/XkqUwhlRwJI"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -154,33 +154,47 @@
             <div class="video-link"></div>
         </section>
     </main>
-    <section class="container">
-        <div class="official">
+
+    <!-- Official Section -->
+    <section class="official">
+        <div class="container">
             <div class="official-header">
                 <h2>We Establish Football To Its Highest Priority</h2>
             </div>
-            <div class="mission">
-                <h3>Our Mission</h3>
-                <p>At vero eos accusamus iusto odio dignissim ducimus a blandi praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi sit occaecati cupiditate provident similique sunt.
-                </p>
+            <div class="official-content">
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>At vero eos accusamus iusto odio dignissim ducimus a blandi praesentium voluptatum deleniti atque
+                        corrupti quos dolores et quas molestias excepturi sit occaecati cupiditate provident similique
+                        sunt.
+                    </p>
+                </div>
+                <div class="vision">
+                    <h3>Our Vision</h3>
+                    <p>Temporibus autem quibusdam et aut officiis debitis that aut rerum necessitatibus saepe eveniet ut
+                        et
+                        voluptates repudiandae sint et molestiae non recusandae at Itaque earum rerum hic tenetur
+                        sapiente.
+                    </p>
+                </div>
             </div>
-            <div class="vision">
-                <h3>Our Vision</h3>
-                <p>Temporibus autem quibusdam et aut officiis debitis that aut rerum necessitatibus saepe eveniet ut et
-                    voluptates repudiandae sint et molestiae non recusandae at Itaque earum rerum hic tenetur sapiente.
-                </p>
-            </div>
+
         </div>
 
     </section>
+
+    <!-- Footer Sectionn -->
     <footer>
         <img src="images/Logo.png" alt="">
         <div class="icons">
-            <i style="line-height: 32px" class="fab fa-instagram"></i>
-            <i style="line-height: 32px" class="fab fa-dribbble"></i>
-            <i style="line-height: 32px" class="fab fa-twitter"></i>
-            <i style="line-height: 32px" class="fab fa-youtube"></i>
+            <a target="_blank" href="https://www.instagram.com/"><i style="line-height: 32px"
+                    class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://dribbble.com/"><i style="line-height: 32px"
+                    class="fab fa-dribbble"></i></a>
+            <a target="_blank" href="https://twitter.com/?lang=en"><i style="line-height: 32px"
+                    class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.youtube.com/"><i style="line-height: 32px"
+                    class="fab fa-youtube"></i></a>
         </div>
         <p>Copyright &copy; 2022 Football</p>
     </footer>
